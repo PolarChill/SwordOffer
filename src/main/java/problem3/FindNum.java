@@ -9,14 +9,14 @@ import org.junit.Test;
  * Created By Polar on 2017/10/16
  */
 public class FindNum {
-    public Boolean findInPartiallySortedMatrix(int[][] matrix, int x) {
-        if (null == matrix || matrix.length < 0) {
+    private Boolean findInPartiallySortedMatrix(int[][] matrix, int x) {
+        if (null == matrix ) {
             return false;
         }
         int row = 0;
         int column = matrix[0].length - 1;
 
-        while(column >= 0 && row <= matrix.length - 1) {
+        while (column >= 0 && row <= matrix.length - 1) {
             // 从右上角开始查找
             if (x == matrix[row][column]) {
                 System.out.println("row: " + row + "   column: " + column);
@@ -37,7 +37,8 @@ public class FindNum {
     @Test
     public void testFIndNum() {
         int[][] matrix = {{1, 2, 4, 8}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
-        System.out.println(findInPartiallySortedMatrix(matrix, 1));
+        int x = 7;
+        System.out.println(findInPartiallySortedMatrix(matrix, x));
 
     }
 
