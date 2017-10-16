@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Description : 二维数组查找值, 每一行, 每一列 依次递增
  * 核心思想: 从数组右上角开始查找, 若该值大于目标值, 则当前行抛弃,
- * 若该值小于目标值, 则当前列不在查询范围内,抛弃
+ * 若该值小于目标值, 则当前列不在查询范围内 ,抛弃
  * Created By Polar on 2017/10/16
  */
 public class FindNum {
