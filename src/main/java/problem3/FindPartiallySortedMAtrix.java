@@ -8,7 +8,7 @@ import org.junit.Test;
  * 若该值小于目标值, 则当前列不在查询范围内,抛弃
  * Created By Polar on 2017/10/16
  */
-public class FindNum {
+public class FindPartiallySortedMAtrix {
     private Boolean findInPartiallySortedMatrix(int[][] matrix, int x) {
         if (null == matrix ) {
             return false;
